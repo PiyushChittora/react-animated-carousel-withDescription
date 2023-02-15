@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+.HomeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    width: 80vw;
+}
+
+.rightContainer {
+    position: relative;
+    overflow: hidden;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    animation: 1s ease-out 1 containerAnimate;
+}
+
+@keyframes containerAnimate {
+    from {
+        height: 55%;
+    }
+    
+    to {
+        height: 75%;
+    }
+}
+
+.box {
+    position: absolute;
+    width: 52vw;
+    height: 75vh;
+    transform: translateX(100%);
+}
+
+@keyframes boxAnimate {
+    from {
+        transform: translateX(0);
+    }
+    
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.blue {
+    z-index: 10003;
+    background-color: #072142;
+    animation: 0.7s ease 1 boxAnimate;
+}
+
+.red {
+    z-index: 10002;
+    background-color: #ff4d5a;
+    animation: 0.8s ease-in-out 1 boxAnimate;
+}
+
+.rightContainer>img {
+    max-width: 52vw;
+    height: 75vh;
+    object-fit: cover;
+    animation: 1s ease-out 1 imgAnimate;
+}
+
+@keyframes imgAnimate {
+    from {
+        width: 43vw;
+    }
+
+    to {
+        width: 52vw;
+    }
+}
+
+.idxContainer {
+    z-index: 100000;
+    position: absolute;
+    left: 85vw;
+    bottom: 10vh;
+    overflow: hidden;
+}
+
+.idxText {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-size: 6em;
+    font-family: 'DM Serif Text', serif;
+    text-shadow: 0 0px 7px #00000050;
+    animation: 1s ease-out 1 idxAnimate;
+}
+
+@keyframes idxAnimate {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 800px) {
+    .HomeContainer {
+        align-items: flex-end;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .rightContainer {
+        height: 40vh;
+    }
+
+    @keyframes containerAnimate {
+        from {
+            height: 30vh;
+        }
+
+        to {
+            height: 40vh;
+        }
+    }
+
+    .box {
+        width: 101%;
+        height: 40vh;
+    }
+
+    .rightContainer>img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    @keyframes imgAnimate {
+        from {
+            width: 80%;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    .idxContainer {
+        left: 5vw;
+        bottom: 80vh;
+    }
+}

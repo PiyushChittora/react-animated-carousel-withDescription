@@ -1,0 +1,36 @@
+{
+  "name": "react-3d-animated-carousel",
+  "version": "1.2.1",
+  "description": "A responsive full page animated carousel with description and color changing feature, works with dark mode",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "carousel",
+    "responsive",
+    "animated",
+    "animation",
+    "3d",
+    "description",
+    "dark-mode"
+  ],
+  "author": "PiyushChittora",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^1.0.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
