@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
     width: 80vw;
 }
 
@@ -104,6 +103,8 @@
 @media (max-width: 800px) {
     .HomeContainer {
         align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column-reverse;
         width: 100vw;
         height: 80vh;
     }
