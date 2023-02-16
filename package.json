@@ -1,6 +1,6 @@
 {
   "name": "react-3d-animated-carousel",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "A responsive full page animated carousel with description and color changing feature, works with dark mode",
   "main": "./build/index.js",
   "scripts": {
