@@ -2,7 +2,7 @@
 
 - A full page animated carousel with description, changes color per slide and works with dark mode.
 
-  ![Example](./demoExample.jpg)
+  ![Example](./demoexample.jpg)
   
   Have a Look at the [Example](https://piyushchittora.github.io/npm-packages-demo/)
 
