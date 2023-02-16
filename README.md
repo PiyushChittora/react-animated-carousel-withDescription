@@ -1,6 +1,6 @@
 # react-animated-carousel-withDescription
 
-- A full page animated carousel with description, changes color per slide and works with dark mode.
+- A responsive full page animated carousel with description, changes color per slide and works with dark mode.
 
   ![Example](./demoexample.jpg)
   
